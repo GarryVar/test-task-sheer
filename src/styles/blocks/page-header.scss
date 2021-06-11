@@ -1,0 +1,26 @@
+.page-header__inner {
+  display: flex;
+  align-items: center;
+  padding-top: 27px;
+}
+
+.page-header__address {
+  margin-left: 56px;
+}
+.page-header__call {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  margin-left: auto;
+}
+
+.page-header__phone {
+  font-weight: bold;
+}
+
+.page-header__callback {
+  font-size: 13px;
+  color: #e41a22;
+  text-decoration: underline;
+}

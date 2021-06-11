@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 1px dotted gray;
+  box-shadow: none;
+}
+
+body {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  min-width: 120px;
+  min-height: 760px;
+
+  color: #1b212b;
+  line-height: 24px;
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+
+  background-color: $main-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+
+  cursor: pointer;
+  transition: background-color ease-in 0.2s;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: none;
+
+  clip: rect(0, 0, 0, 0);
+}

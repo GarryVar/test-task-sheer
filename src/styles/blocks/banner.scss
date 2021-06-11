@@ -1,0 +1,12 @@
+.banner {
+  background-image: url('../../img/tank-and-house.png'),
+    linear-gradient(to top, #f7f7f9, #d0f1ff),
+    linear-gradient(to bottom, #ffffff, #ffffff);;
+  background-size: 1259px 813px, cover;
+  background-repeat: no-repeat;
+  background-position: 130% 100px, 0 0;
+}
+
+.banner__inner {
+  height: 820px;
+}
