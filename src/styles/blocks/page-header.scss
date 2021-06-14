@@ -1,26 +1,138 @@
+
+.page__header {
+  position: static;
+
+  background-color: #d0f1ff;
+}
+
+
 .page-header__inner {
   display: flex;
   align-items: center;
-  padding-top: 27px;
+  justify-content: space-between;
+
+  padding-top: 20px;
+}
+
+.page-header__logo {
+  position: relative;
+
+  width: 36px;
+
+  span {
+    position: absolute;
+    bottom: -6px;
+    left: 60px;
+
+    display: none;
+    width: 100%;
+
+    font-size: 11px;
+    line-height: 2.18;
+    color: $dark-blue;
+  }
 }
 
 .page-header__address {
-  margin-left: 56px;
+  display: none;
 }
+
 .page-header__call {
   display: flex;
   flex-direction: column;
   text-align: right;
-
-  margin-left: auto;
 }
 
-.page-header__phone {
-  font-weight: bold;
-}
-
+.page-header__phone,
 .page-header__callback {
-  font-size: 13px;
-  color: #e41a22;
-  text-decoration: underline;
+  span {
+    display: none;
+  }
 }
+
+
+.page-header__phone-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  svg {
+    fill: $dark-blue;
+  }
+}
+
+@media (min-width: $small-tablet) {
+  .page-header__inner {
+    flex-wrap: nowrap;
+  }
+
+  .page-header__logo {
+    width: 275px;
+    height: 43px;
+
+    span {
+      bottom: -3px;
+      left: 98px;
+
+      display: inline;
+    }
+  }
+
+  .page-header__phone {
+    display: block;
+    font-weight: bold;
+  }
+
+  .page-header__callback {
+    display: block;
+
+    font-size: 13px;
+    color: #e41a22;
+    text-decoration: underline;
+
+    span {
+      display: block;
+    }
+  }
+
+
+  .page-header__call {
+    width: auto;
+    order: 0;
+  }
+
+  .page-header__phone {
+    span {
+      display: block;
+    }
+  }
+
+
+  .page-header__phone-icon {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page__header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+@media (min-width: 840px) {
+  .page-header__address {
+    display: block;
+    margin-left: 56px;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   .page-header__address {
+//     display: block;
+//     margin-left: 56px;
+//   }
+// }

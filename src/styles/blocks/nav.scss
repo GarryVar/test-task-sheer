@@ -1,5 +1,10 @@
 .nav__btn  {
-  margin-left: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+
   width: 36px;
   height: 36px;
 
@@ -9,4 +14,10 @@
 
 .nav__icon {
   fill: $main-white;
+}
+
+@media (min-width: $small-tablet) {
+  .nav__btn {
+    margin-left: 26px;
+  }
 }

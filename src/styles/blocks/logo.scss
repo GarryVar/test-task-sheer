@@ -1,3 +1,19 @@
-.logo {
+.logo__shape {
+  width: 360px;
+}
 
+.logo__shape-text {
+  display: none;
+}
+
+
+@media (min-width: $small-tablet) {
+
+  .logo__shape {
+    width: auto;
+  }
+
+  .logo__shape-text {
+    display: block;
+  }
 }
