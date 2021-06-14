@@ -34,10 +34,6 @@ exports.styles = styles;
 //Html
 const html = () => {
   return gulp.src('src/*.html')
-    .pipe(htmlmin({
-      collapseWhitespace: true,
-      removeComments: true
-    }))
     .pipe(gulp.dest('dist'))
     .pipe(reload({stream: true}))
 };
