@@ -1,8 +1,8 @@
 {
-  "name": "cat-energy-19",
+  "name": "test-task-sheer",
   "version": "17.1.1",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
