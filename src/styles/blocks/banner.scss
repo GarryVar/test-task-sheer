@@ -1,10 +1,7 @@
 .banner {
-  background-image: url('../img/tank-and-house.png'),
-    linear-gradient(to top, #f7f7f9, #d0f1ff),
-    linear-gradient(to bottom, #ffffff, #ffffff);
+  background-image: url('../img/tank-and-house.png'), url('../img/truck.png'), linear-gradient(to top, #f7f7f9, #d0f1ff);
+  background-size: 1275px auto, 880px auto, cover;
   background-repeat: no-repeat;
-  background-size: 450px, cover;
-  background-position: right 234px, 0 0;
 }
 
 .banner__inner {
@@ -68,35 +65,6 @@
 .banner__service {
   margin: 20px 0;
   width: 100%;
-
-  li {
-    position: relative;
-    margin-bottom: 52px;
-  }
-
-  li:last-child {
-    margin-bottom: 0;
-  }
-
-  li::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 35px;
-    height: 35px;
-
-    background-color: $main-white;
-    border-radius: 50%;
-  }
-
-  p {
-    margin-left: 60px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
 }
 
 .banner__application {
@@ -124,12 +92,6 @@
 
 
 @media (min-width: $tablet-width) {
-
-  .banner {
-    background-size: 1259px auto, cover;
-    background-position: right 0, 0 0;
-  }
-
   .banner__inner {
     padding-top: 120px;
   }
@@ -142,30 +104,14 @@
   .banner__service {
     width: 100%;
 
-     li {
-      margin-bottom: 52px;
-    }
-
-    li:last-child {
-      margin-bottom: 0;
-    }
-
-    li::before {
-      width: 40px;
-      height: 40px;
-    }
-
-    p {
-      font-size: 18px;
-    }
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .banner {
-    background-position: right 140px, 0 0;
-    background-size: 100%;
+    background-size: 1400px auto, 780px auto, cover;
+    background-position: right 122px, -360px 300px, 0 0;
   }
 
   .banner__inner {
@@ -189,7 +135,7 @@
 
   .banner__content {
     display: block;
-    margin-bottom: 141px;
+    margin-bottom: 61px;
 
     width: 823px;
   }
@@ -202,17 +148,6 @@
 
   .banner__service {
     padding-left: 250px;
-
-    li {
-      &::before {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    p {
-      font-size: 15px;
-    }
   }
 }
 

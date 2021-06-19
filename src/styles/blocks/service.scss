@@ -1,0 +1,66 @@
+.service {
+  li:last-child {
+      margin-bottom: 0;
+  }
+
+  li ::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: $main-white;
+    border-radius: 50%;
+  }
+
+  p {
+    margin-left: 60px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+  .service__item {
+    position: relative;
+    margin-bottom: 52px;
+  }
+
+
+@media (min-width: $tablet-width) {
+  .service {
+    li {
+      margin-bottom: 52px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    li::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .service {
+    li::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}

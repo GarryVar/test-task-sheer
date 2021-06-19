@@ -57,7 +57,8 @@
 }
 
 .application__text {
-  // order: 2;
+  padding-top: 20px;
+
   font-size: 14px;
   height: 200px;
 
@@ -89,7 +90,13 @@
     width: 45%;
   }
 
+  .application__left {
+    display: flex;
+    flex-direction: column;
+  }
+
   .application__image {
+    margin: 0;
     height: 100%;
   }
 
