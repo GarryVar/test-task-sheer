@@ -41,7 +41,7 @@
     "src/*.html",
     "src/scripts/**/*.js",
     "src/img/**/*.svg",
-    "src/s/**tyles/*.{sass,scss}"
+    "src/styles/**/*.{sass,scss}"
   ],
   "dependencies": {
     "merge": "^1.2.1"
